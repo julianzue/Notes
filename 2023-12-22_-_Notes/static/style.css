@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body{
+    background: #222;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Login */
+
+.login-container{
+    background: #444;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.login-container h1{
+    margin-bottom: 20px;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
+
+.submit-btn{
+    padding: 10px;
+    background: orange;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Main */
+
+header{
+    background: #444;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+header .logout{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: darkred;
+    color: white;
+    text-decoration: none;
+    font-size: 10pt;
+    display: block;
+}
+
+section{
+    padding: 20px;
+}
+
+article{
+    padding: 20px;
+    background: #444;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article .head h3{
+    color: white;
+}
+
+article .head .new{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: limegreen;
+    font-size: 10pt;
+    color: black;
+    display: block;
+}
+
+article .body.item-gap{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+article .body .item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: #666;
+    border-radius: 5px;
+    color: white;
+}
+
+article .body .item .left{
+   
+    display: flex;
+    
+}
+
+article .body .item .left p:nth-child(1){
+    width: 30px;
+    color: #ccc;
+}
+
+article .body .item .left p:nth-child(2){
+    width: 110px;
+    color: #ccc;
+}
+
+article .body .item .right .delete{
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: darkred;
+    font-size: 10pt;
+    color: white;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+/* New */
+
+article .head .back{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: orange;
+    font-size: 10pt;
+    color: black;
+    display: block;
+}
+
+.text-input-normal,
+.date-input-normal{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: calc(100% - 20px);
+}
+
+.submit-btn-add{
+    padding: 10px;
+    background: orange;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}

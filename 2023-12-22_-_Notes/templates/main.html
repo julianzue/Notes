@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start | Notizen</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Notizen</h2>
+        <a href="/" class="logout">Abmelden</a>
+    </header>
+
+    <section>
+        <article>
+            <div class="head">
+                <h3>Notizen</h3>
+                <a href="/notizen/neu" class="new">Neu</a>
+            </div>
+            <div class="body item-gap">
+                
+                {% for item in data %}
+
+                    <div class="item">
+                        <div class="left">
+                            <p>{{ item.id }}</p>
+                            <p>{{ item.date }}</p>
+                            <p>{{ item.note }}</p>
+                        </div>
+                        <div class="right">
+                            <form method="post">
+                                <input type="hidden" name="id" value="{{ item.id }}">
+                                <input type="submit" value="X" class="delete" name="delete">
+                            </form>
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+        </article>
+    </section>
+    
+</body>
+</html>

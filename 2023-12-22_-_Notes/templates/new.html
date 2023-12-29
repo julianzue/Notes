@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neu | Notizen</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header>
+        <h2>Notizen</h2>
+        <a href="/" class="logout">Abmelden</a>
+    </header>
+
+    <section>
+        <article>
+            <div class="head">
+                <h3>Neue Notiz</h3>
+                <a href="/notizen" class="back">Zurück</a>
+            </div>
+            <div class="body">
+                <form method="post">
+                    <input type="text" name="note" class="text-input-normal" placeholder="Notiz">
+                    <input type="date" name="date" class="date-input-normal" lang="de">
+                    <input type="submit" value="Hinzufügen" class="submit-btn-add" name="add">
+                </form>
+            </div>
+        </article>
+    </section>
+    
+</body>
+</html>
